@@ -16,12 +16,12 @@ import (
 	"github.com/spf13/afero"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/giantswarm/cluster-operator/pkg/cluster"
-	"github.com/giantswarm/cluster-operator/pkg/v2/guestcluster"
-	"github.com/giantswarm/cluster-operator/pkg/v2/resource/chart"
-	"github.com/giantswarm/cluster-operator/pkg/v2/resource/encryptionkey"
-	"github.com/giantswarm/cluster-operator/service/controller/azure/v2/key"
-	"github.com/giantswarm/cluster-operator/service/controller/azure/v2/resource/azureconfig"
+	"github.com/giantswarm/test-operator/pkg/cluster"
+	"github.com/giantswarm/test-operator/pkg/v2/guestcluster"
+	"github.com/giantswarm/test-operator/pkg/v2/resource/chart"
+	"github.com/giantswarm/test-operator/pkg/v2/resource/encryptionkey"
+	"github.com/giantswarm/test-operator/service/controller/azure/v2/key"
+	"github.com/giantswarm/test-operator/service/controller/azure/v2/resource/azureconfig"
 )
 
 const (

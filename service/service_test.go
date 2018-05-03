@@ -8,7 +8,7 @@ import (
 	"github.com/giantswarm/micrologger/microloggertest"
 	"github.com/spf13/viper"
 
-	"github.com/giantswarm/cluster-operator/flag"
+	"github.com/giantswarm/test-operator/flag"
 )
 
 func Test_Service_New(t *testing.T) {

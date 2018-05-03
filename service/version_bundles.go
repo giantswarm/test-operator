@@ -3,12 +3,12 @@ package service
 import (
 	"github.com/giantswarm/versionbundle"
 
-	awsv1 "github.com/giantswarm/cluster-operator/service/controller/aws/v1"
-	awsv2 "github.com/giantswarm/cluster-operator/service/controller/aws/v2"
-	azurev1 "github.com/giantswarm/cluster-operator/service/controller/azure/v1"
-	azurev2 "github.com/giantswarm/cluster-operator/service/controller/azure/v2"
-	kvmv1 "github.com/giantswarm/cluster-operator/service/controller/kvm/v1"
-	kvmv2 "github.com/giantswarm/cluster-operator/service/controller/kvm/v2"
+	awsv1 "github.com/giantswarm/test-operator/service/controller/aws/v1"
+	awsv2 "github.com/giantswarm/test-operator/service/controller/aws/v2"
+	azurev1 "github.com/giantswarm/test-operator/service/controller/azure/v1"
+	azurev2 "github.com/giantswarm/test-operator/service/controller/azure/v2"
+	kvmv1 "github.com/giantswarm/test-operator/service/controller/kvm/v1"
+	kvmv2 "github.com/giantswarm/test-operator/service/controller/kvm/v2"
 )
 
 func NewVersionBundles() []versionbundle.Bundle {

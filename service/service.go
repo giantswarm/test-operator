@@ -19,12 +19,12 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	"github.com/giantswarm/cluster-operator/flag"
-	"github.com/giantswarm/cluster-operator/pkg/cluster"
-	"github.com/giantswarm/cluster-operator/service/controller/aws"
-	"github.com/giantswarm/cluster-operator/service/controller/azure"
-	"github.com/giantswarm/cluster-operator/service/controller/kvm"
-	"github.com/giantswarm/cluster-operator/service/healthz"
+	"github.com/giantswarm/test-operator/flag"
+	"github.com/giantswarm/test-operator/pkg/cluster"
+	"github.com/giantswarm/test-operator/service/controller/aws"
+	"github.com/giantswarm/test-operator/service/controller/azure"
+	"github.com/giantswarm/test-operator/service/controller/kvm"
+	"github.com/giantswarm/test-operator/service/healthz"
 )
 
 const (
@@ -63,7 +63,7 @@ func New(config Config) (*Service, error) {
 	if config.Logger == nil {
 		return nil, microerror.Maskf(invalidConfigError, "config.Logger must not be empty")
 	}
-	config.Logger.Log("level", "debug", "message", fmt.Sprintf("creating cluster-operator gitCommit:%s", config.GitCommit))
+	config.Logger.Log("level", "debug", "message", fmt.Sprintf("creating test-operator gitCommit:%s", config.GitCommit))
 
 	if config.Flag == nil {
 		return nil, microerror.Maskf(invalidConfigError, "config.Flag must not be empty")

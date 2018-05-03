@@ -12,9 +12,9 @@ import (
 	"github.com/giantswarm/operatorkit/controller/resource/retryresource"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/giantswarm/cluster-operator/pkg/v1/resource/encryptionkey"
-	"github.com/giantswarm/cluster-operator/service/controller/aws/v1/key"
-	"github.com/giantswarm/cluster-operator/service/controller/aws/v1/resource/awsconfig"
+	"github.com/giantswarm/test-operator/pkg/v1/resource/encryptionkey"
+	"github.com/giantswarm/test-operator/service/controller/aws/v1/key"
+	"github.com/giantswarm/test-operator/service/controller/aws/v1/resource/awsconfig"
 )
 
 const (

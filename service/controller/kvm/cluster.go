@@ -14,10 +14,10 @@ import (
 	apiextensionsclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/giantswarm/cluster-operator/pkg/cluster"
-	"github.com/giantswarm/cluster-operator/service/controller/kvm/v1"
-	"github.com/giantswarm/cluster-operator/service/controller/kvm/v2"
-	"github.com/giantswarm/cluster-operator/service/controller/kvm/v3"
+	"github.com/giantswarm/test-operator/pkg/cluster"
+	"github.com/giantswarm/test-operator/service/controller/kvm/v1"
+	"github.com/giantswarm/test-operator/service/controller/kvm/v2"
+	"github.com/giantswarm/test-operator/service/controller/kvm/v3"
 )
 
 // ClusterConfig contains necessary dependencies and settings for
