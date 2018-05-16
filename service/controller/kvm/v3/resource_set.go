@@ -1,4 +1,4 @@
-package v3
+package v2
 
 import (
 	"context"
@@ -17,11 +17,11 @@ import (
 	"k8s.io/client-go/kubernetes"
 
 	"github.com/giantswarm/test-operator/pkg/cluster"
-	"github.com/giantswarm/test-operator/pkg/v3/guestcluster"
-	"github.com/giantswarm/test-operator/pkg/v3/resource/chart"
-	"github.com/giantswarm/test-operator/pkg/v3/resource/encryptionkey"
-	"github.com/giantswarm/test-operator/service/controller/kvm/v3/key"
-	"github.com/giantswarm/test-operator/service/controller/kvm/v3/resource/kvmconfig"
+	"github.com/giantswarm/test-operator/pkg/v2/guestcluster"
+	"github.com/giantswarm/test-operator/pkg/v2/resource/chart"
+	"github.com/giantswarm/test-operator/pkg/v2/resource/encryptionkey"
+	"github.com/giantswarm/test-operator/service/controller/kvm/v2/key"
+	"github.com/giantswarm/test-operator/service/controller/kvm/v2/resource/kvmconfig"
 )
 
 const (
